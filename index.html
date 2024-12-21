@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student ID Card Generator</title>
+    <title>Cricketer ID Card Generator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('background.jpg');
+            background-image: url('cric.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-           
         }
 
         form {
             max-width: 400px;
             margin: 0 auto;
             padding: 20px;
-            background-color:#001C30;
-            background-image: url('background.jpg');
+            background-color: #001C30;
+            background-image: url('cric.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: 5px;
@@ -40,10 +37,10 @@
             width: 90%;
             padding: 8px;
             margin-bottom: 10px;
-           border-top-right-radius: 50px;
-           border-bottom-right-radius: 50px;
-           border-top-left-radius: 50px;
-           border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
             border: 1px solid #ccc;
             color: black;
             font-weight: bold;
@@ -104,22 +101,14 @@
         }
 
         #download-link {
-
-display: block;
-
-text-align: center;
-
-margin-top: 20px;
-
-visibility: hidden;
-
-}
-
-
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            visibility: hidden;
+        }
 
         .navbar {
-            
-          padding: 10px;
+            padding: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -132,23 +121,13 @@ visibility: hidden;
         .navbar h4 {
             margin: 0;
         }
+
         #para {
             font-size: 12px;
             color: black;
             margin-bottom: 0;
             text-align: center;
         }
-
-        /* @media only screen and (max-width: 600px) {
-            form {
-                max-width: 100%;
-                padding: 10px;
-            }
-
-            .id-card {
-                width: 100%;
-            }
-        } */
     </style>
 </head>
 <body>
@@ -157,20 +136,20 @@ visibility: hidden;
         Please enter the details in the form, click on "Generate ID Card," and ensure that each field contains a maximum of 20 characters.
     </marquee>  
     
-    <h1 style="color: black; text-align: center;">STUDENT ID CARD FORM</h1>
-  <form id="student-form">
+    <h1 style="color: black; text-align: center;">CRICKETER ID CARD FORM</h1>
+  <form id="cricketer-form">
     
     <label for="name"><i class="fa fa-user"></i> Name:</label>
     <input type="text" id="name" maxlength="20" required><br>
     
-    <label for="student-id"><i class="fa fa-id-card"></i> Student ID:</label>
-    <input type="text" id="student-id"  maxlength="20" required><br>
+    <label for="player-id"><i class="fa fa-id-card"></i> Player ID:</label>
+    <input type="text" id="player-id"  maxlength="20" required><br>
     
-    <label for="course"><i class="fa fa-book"></i> Course:</label>
-    <input type="text" id="course" maxlength="20" required><br>
+    <label for="team"><i class="fa fa-users"></i> Team:</label>
+    <input type="text" id="team" maxlength="20" required><br>
     
-    <label for="college"><i class="fa fa-university"></i> College:</label>
-    <input type="text" id="college" maxlength="20" required><br>
+    <label for="club"><i class="fa fa-university"></i> Club:</label>
+    <input type="text" id="club" maxlength="20" required><br>
     
     <label for="address"><i class="fa fa-map-marker"></i> Address:</label>
     <input type="text" id="address"  maxlength="20" required><br>
@@ -190,76 +169,62 @@ visibility: hidden;
         <div class="id-card">
             <div class="navbar">
                 <img src="IPL-10-Logo-PNG.png" alt="" width="50px" height="50px">
-                <center><h2>Khammam CENTER STUDENT GATE PASS</h2></center>
+                <center><h2>Cricketer Official Pass</h2></center>
                 <img src="Mumbai-Indians-Logo-PNG.png" alt="" width="60px" height="50px">
             </div>
             <hr>
             <center>
-                <img id="photo-preview" src="" alt="Student Photo">
+                <img id="photo-preview" src="" alt="Cricketer Photo">
                 <h2 id="name-preview"></h2>
             </center>
-            <p id="student-id-preview"></p>
-            <p id="course-preview"></p>
-            <p id="college-preview"></p>
+            <p id="player-id-preview"></p>
+            <p id="team-preview"></p>
+            <p id="club-preview"></p>
             <p id="address-preview"></p>
             <p id="date-preview"></p>
             <div>
             <img id="qr-code" src="" alt="QR Code">
-       <p id="para">  Khammam, Telangana 507002</p>
-            <a id="download-link" href="#"  download="student-id-card.png">Download</a>
+       <p id="para">   Swami Sivananda Memorial Institute & School, 31, East Avenue, Punjabi Bagh, Delhi – 110026</p>
+            <a id="download-link" href="#"  download="cricketer-id-card.png">Download</a>
           
 
         </div>
     </div>
 
-    <!-- Include the dom-to-image library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
-    
-
     <script>
-        document.getElementById("student-form").addEventListener("submit", function (event) {
+        document.getElementById("cricketer-form").addEventListener("submit", function (event) {
             event.preventDefault();
 
             // Fetching form values
             var name = document.getElementById("name").value;
-            var studentId = document.getElementById("student-id").value;
-            var course = document.getElementById("course").value;
-            var college = document.getElementById("college").value;
+            var playerId = document.getElementById("player-id").value;
+            var team = document.getElementById("team").value;
+            var club = document.getElementById("club").value;
             var address = document.getElementById("address").value;
-            // var startDate = new Date(document.getElementById("date").value);
-            // var endDate = new Date(startDate.getFullYear(), startDate.getMonth() + 6, startDate.getDate());
-
-            // // Format the end date as "Month Year" (e.g., "June 2023")
-            // var endDateFormatOptions = { day: "2-digit", month: "2-digit", year: "numeric" };
-
-            // var formattedEndDate = endDate.toLocaleDateString(undefined, endDateFormatOptions);
-
             var startDate = new Date(document.getElementById("date").value);
-var endDate = new Date(startDate.getTime());
-endDate.setMonth(endDate.getMonth() + 6);
+            var endDate = new Date(startDate.getTime());
+            endDate.setMonth(endDate.getMonth() + 6);
 
-// Format the end date as "dd/mon/yyyy"
-var endDateFormatOptions = { day: "2-digit", month: "short", year: "numeric" };
-var formattedEndDate = endDate.toLocaleDateString("en-US", endDateFormatOptions);
-
+            var endDateFormatOptions = { day: "2-digit", month: "short", year: "numeric" };
+            var formattedEndDate = endDate.toLocaleDateString("en-US", endDateFormatOptions);
 
             var photo = document.getElementById("photo").files[0];
 
             // Displaying form values on ID card
             document.getElementById("photo-preview").src = URL.createObjectURL(photo);
             document.getElementById("name-preview").innerText = name;
-            document.getElementById("student-id-preview").innerText = "Student ID: " + studentId;
-            document.getElementById("course-preview").innerText = "Course: " + course;
-            document.getElementById("college-preview").innerText = "College: " + college;
+            document.getElementById("player-id-preview").innerText = "Player ID: " + playerId;
+            document.getElementById("team-preview").innerText = "Team: " + team;
+            document.getElementById("club-preview").innerText = "Club: " + club;
             document.getElementById("address-preview").innerText = "Address: " + address;
             document.getElementById("date-preview").innerText = "Valid Until: " + formattedEndDate;
 
             // Generate and display QR code
-            var qrCodeData = "Organization: Task \n" +
+            var qrCodeData = "Organization: Cricket Association\n" +
                 "Name: " + name + "\n" +
-                "Student ID: " + studentId + "\n" +
-                "Course: " + course + "\n" +
-                "College: " + college + "\n" +
+                "Player ID: " + playerId + "\n" +
+                "Team: " + team + "\n" +
+                "Club: " + club + "\n" +
                 "Address: " + address + "\n" +
                 "Valid Until: " + formattedEndDate;
 
@@ -267,7 +232,7 @@ var formattedEndDate = endDate.toLocaleDateString("en-US", endDateFormatOptions)
             document.getElementById("qr-code").src = qrCodeUrl;
 
             // Show/hide the form and ID card container
-            var form = document.getElementById("student-form");
+            var form = document.getElementById("cricketer-form");
             var idCardContainer = document.getElementById("id-card-container");
 
             if (form.style.display === "none") {
